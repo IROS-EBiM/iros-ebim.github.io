@@ -80,6 +80,7 @@
       <li><a href="#home">Home</a></li>
       <li><a href="#overview">Overview</a></li>
       <li><a href="#benchmark">Benchmark</a></li>
+      <li><a href="#platform">Platform</a></li>
       <li><a href="#tasks">Tasks</a></li>
       <li><a href="#schedule">Schedule</a></li>
       <li><a href="#organizers">Organizers</a></li>
@@ -96,6 +97,13 @@
      ============================================================ -->
 <section id="home">
   <div class="hero-content">
+    <div class="hero-iros-logo">
+      <picture>
+        <source srcset="img/IROS_2026_logo.webp" type="image/webp" />
+        <img src="img/IROS_2026_logo.webp" alt="IROS 2026 Pittsburgh" height="140" loading="eager" />
+      </picture>
+    </div>
+
     <div class="hero-badge">IROS 2026 · Half-Day Workshop</div>
 
     <h1 class="hero-title">
@@ -142,10 +150,11 @@
     </div>
 
     <p class="overview-abstract fade-in">
-      Mobile manipulation is rapidly converging with foundation models and vision-language-action (VLA)
-      systems. However, the robotics community still lacks a standardized and reproducible evaluation
-      framework connecting simulation results with real-world deployment. This workshop proposes a
-      globally coordinated benchmarking initiative through a structured <strong>three-phase mechanism</strong>.
+      Mobile manipulation, including bimanual coordination, is increasingly combined with foundation models
+      and vision-language-action (VLA) systems. Yet the robotics community still lacks standardized benchmarks
+      that validate these methods in real-world settings. Simulation results often fail to translate to robust
+      deployment due to sim-to-real gaps, platform differences, and limited reproducibility. This workshop
+      proposes a globally coordinated benchmarking initiative through a structured <strong>three-phase plan</strong>.
     </p>
 
     <!-- ── Three-Phase Pipeline ── -->
@@ -165,8 +174,9 @@
           <div class="phase-label">Phase I</div>
           <h3 class="phase-title">Open Simulation Benchmark</h3>
           <p class="phase-desc">
-            Release a curated suite of bimanual manipulation tasks in open simulation environments with standardized APIs.
-            Teams worldwide compete and iterate on a shared, reproducible leaderboard.
+            Release an open simulation benchmark focusing on unstructured manipulation scenarios: cable routing,
+            deformable material handling (thermal pad placement), and caregiving and feeding tasks. Global teams
+            participate through an open call on a shared, reproducible leaderboard.
           </p>
         </div>
 
@@ -194,9 +204,12 @@
               <!-- Pittsburgh pin ~(17,22) -->
               <circle cx="17" cy="22" r="3" fill="currentColor"/>
               <line x1="17" y1="22" x2="17" y2="17" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-              <!-- Munich pin ~(26,19) -->
-              <circle cx="26" cy="19" r="3" fill="currentColor"/>
-              <line x1="26" y1="19" x2="26" y2="14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+              <!-- Hamburg pin ~(27,17) -->
+              <circle cx="27" cy="17" r="3" fill="currentColor"/>
+              <line x1="27" y1="17" x2="27" y2="12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+              <!-- Munich pin ~(28,21) -->
+              <circle cx="28" cy="21" r="3" fill="currentColor"/>
+              <line x1="28" y1="21" x2="28" y2="16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
               <!-- Beijing pin ~(38,21) -->
               <circle cx="38" cy="21" r="3" fill="currentColor"/>
               <line x1="38" y1="21" x2="38" y2="16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
@@ -205,7 +218,7 @@
           <div class="phase-label">Phase II</div>
           <h3 class="phase-title">Cross-Continent Real-World Validation</h3>
           <p class="phase-desc">
-            Top simulation entries are validated on real robots at partner labs in Munich, Beijing, and Pittsburgh.
+            Top simulation entries are validated on real robots at partner labs in Beijing, Hamburg, Munich, and Pittsburgh.
             Unified hardware protocols and teleoperation pipelines ensure cross-site comparability.
           </p>
         </div>
@@ -240,8 +253,8 @@
           <div class="phase-label">Phase III</div>
           <h3 class="phase-title">IROS Workshop &amp; Roadmap Release</h3>
           <p class="phase-desc">
-            Findings, lessons, and community consensus are presented at IROS 2026. The workshop concludes
-            with a public release of the benchmark roadmap and open dataset for the broader community.
+            Competition results, invited talks, and a panel discussion are presented at IROS 2026. The workshop
+            releases the benchmark protocol, open dataset, and community roadmap for future iterations.
           </p>
         </div>
 
@@ -325,7 +338,7 @@
       <div class="pillar">
         <div class="pillar-number">01</div>
         <h3>Task Suite</h3>
-        <p>Canonical manipulation tasks spanning assembly, tool use, cloth folding, and food preparation.</p>
+        <p>Three core tasks: cable routing, deformable material handling (thermal pad placement), and caregiving &amp; feeding.</p>
       </div>
       <div class="pillar">
         <div class="pillar-number">02</div>
@@ -358,6 +371,97 @@
 
 
 <!-- ============================================================
+     ROBOT PLATFORM
+     ============================================================ -->
+<section id="platform" class="platform-section">
+  <div class="container">
+
+    <div class="text-center fade-in">
+      <h2 class="section-title platform-heading">Competition Platform: Mobile FR3 Duo</h2>
+      <p class="section-subtitle platform-subtitle">
+        A standardized bimanual mobile manipulation platform by Franka Robotics, deployed across all international testbed sites.
+      </p>
+    </div>
+
+    <div class="platform-layout fade-in">
+
+      <!-- Left: stacked front + top view images -->
+      <div class="platform-img-col">
+        <figure class="platform-photo-fig">
+          <img
+            src="img/platform/Mobile_FR3_Duo_Front_View.png"
+            alt="Mobile FR3 Duo — front view showing the bimanual mobile manipulation robot"
+            class="platform-photo-img"
+            loading="lazy"
+          />
+          <figcaption>Front view</figcaption>
+        </figure>
+        <figure class="platform-photo-fig">
+          <img
+            src="img/platform/Mobile_FR3_Duo_Top_View.png"
+            alt="Mobile FR3 Duo — top view showing bimanual arm configuration"
+            class="platform-photo-img"
+            loading="lazy"
+          />
+          <figcaption>Top view — dual FR3 arm configuration</figcaption>
+        </figure>
+      </div>
+
+      <!-- Right: description + specs + attribution -->
+      <div class="platform-info-col">
+        <p class="platform-desc">
+          Mobile FR3 Duo is an all-in-one robotic system combining the Tactile Mobile Robot (TMR) base with dual FR3 arms. It integrates mobility, perception, and bimanual manipulation, making it ideal for data collection and real-world AI deployment. All competition testbeds in Beijing, Hamburg, Munich, and Pittsburgh use identical Mobile FR3 Duo platforms to ensure cross-site reproducibility.
+        </p>
+
+        <div class="platform-specs-grid">
+          <div class="spec-item">
+            <span class="spec-label">Base Dimensions</span>
+            <span class="spec-value">800 × 580 × 294 mm</span>
+          </div>
+          <div class="spec-item">
+            <span class="spec-label">Reach per Arm</span>
+            <span class="spec-value">855 mm</span>
+          </div>
+          <div class="spec-item">
+            <span class="spec-label">Payload</span>
+            <span class="spec-value">3 kg per arm</span>
+          </div>
+          <div class="spec-item">
+            <span class="spec-label">Max Speed</span>
+            <span class="spec-value">1.75 m/s</span>
+          </div>
+          <div class="spec-item">
+            <span class="spec-label">Sensors</span>
+            <span class="spec-value">14× Torque, 2× LiDAR, 8× Cameras, IMU</span>
+          </div>
+          <div class="spec-item">
+            <span class="spec-label">Computing</span>
+            <span class="spec-value">NVIDIA Jetson AGX Orin</span>
+          </div>
+          <div class="spec-item">
+            <span class="spec-label">Control Frequency</span>
+            <span class="spec-value">1 kHz (FCI)</span>
+          </div>
+          <div class="spec-item">
+            <span class="spec-label">Connectivity</span>
+            <span class="spec-value">Wi-Fi, Ethernet, USB, Bluetooth</span>
+          </div>
+        </div>
+
+        <p class="platform-attribution">
+          Learn more at
+          <a href="https://franka.de/product-prototypes" target="_blank" rel="noopener">franka.de/product-prototypes</a>
+          &nbsp;·&nbsp; Franka Robotics GmbH
+        </p>
+      </div>
+
+    </div><!-- /.platform-layout -->
+
+  </div>
+</section>
+
+
+<!-- ============================================================
      BENCHMARK TASKS
      ============================================================ -->
 <section id="tasks">
@@ -365,7 +469,7 @@
     <div class="text-center fade-in">
       <h2 class="section-title">Benchmark Tasks</h2>
       <p class="section-subtitle">
-        Six canonical bimanual manipulation tasks spanning contact-rich assembly, deformable object handling, human interaction, and cluttered-scene perception.
+        Three core bimanual manipulation tasks spanning contact-rich assembly, deformable object handling, and human-centered caregiving.
       </p>
     </div>
 
@@ -398,8 +502,8 @@
           </div>
         </div>
         <div class="task-body">
-          <h3 class="task-title">Deformable Sticker Peeling &amp; Placement</h3>
-          <p class="task-desc">Manipulate thermal silica stickers of different colors and shapes. Requires peeling deformable material and precise placement at semantic targets.</p>
+          <h3 class="task-title">Deformable Material Handling (Thermal Pad Placement)</h3>
+          <p class="task-desc">Manipulate thermal silica pads of different colors, shapes, and sizes. The robot must peel deformable thermal pads from a backing sheet and precisely place them at specified semantic target locations. Requires integration of perception, contact-rich manipulation, and precise positioning.</p>
           <div class="task-tags">
             <span class="task-tag tag-purple">Deformable</span>
             <span class="task-tag tag-purple">Precision</span>
@@ -416,7 +520,7 @@
           </div>
         </div>
         <div class="task-body">
-          <h3 class="task-title">Feeding Task</h3>
+          <h3 class="task-title">Caregiving &amp; Feeding</h3>
           <p class="task-desc">Autonomous feeding assistance using a spoon to scoop from a bowl of coffee beans. The robot must navigate to a feeding area where a mannequin head is placed at a random position, reach the target region, and deposit beans into an empty collection bowl. Evaluation counts the number of beans successfully transferred.</p>
           <div class="task-tags">
             <span class="task-tag tag-amber">Human-Centered</span>
@@ -425,65 +529,11 @@
         </div>
       </div>
 
-      <!-- Task 4 -->
-      <div class="task-card">
-        <div class="task-img" style="background: linear-gradient(135deg, #064e3b 0%, #34d399 100%);">
-          <div class="task-img-label">
-            <span>Task</span>
-            <strong>04</strong>
-          </div>
-        </div>
-        <div class="task-body">
-          <h3 class="task-title">Table Cleaning &amp; Setup</h3>
-          <p class="task-desc">Clear, clean, and reset a table with dishes and utensils in correct positions.</p>
-          <div class="task-tags">
-            <span class="task-tag tag-green">Multi-Step</span>
-            <span class="task-tag tag-green">Rearrangement</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Task 5 -->
-      <div class="task-card">
-        <div class="task-img" style="background: linear-gradient(135deg, #1e1b4b 0%, #818cf8 100%);">
-          <div class="task-img-label">
-            <span>Task</span>
-            <strong>05</strong>
-          </div>
-        </div>
-        <div class="task-body">
-          <h3 class="task-title">Clothes Folding &amp; Sorting</h3>
-          <p class="task-desc">Fold and sort garments by type, requiring deformable object manipulation and category recognition.</p>
-          <div class="task-tags">
-            <span class="task-tag tag-purple">Deformable</span>
-            <span class="task-tag tag-indigo">Classification</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Task 6 -->
-      <div class="task-card">
-        <div class="task-img" style="background: linear-gradient(135deg, #1e293b 0%, #64748b 100%);">
-          <div class="task-img-label">
-            <span>Task</span>
-            <strong>06</strong>
-          </div>
-        </div>
-        <div class="task-body">
-          <h3 class="task-title">Cluttered Scene Retrieval</h3>
-          <p class="task-desc">Retrieve and sort target objects from cluttered, occluded scenes.</p>
-          <div class="task-tags">
-            <span class="task-tag tag-slate">Perception</span>
-            <span class="task-tag tag-slate">Clutter</span>
-          </div>
-        </div>
-      </div>
 
     </div><!-- /.tasks-grid -->
 
     <p class="tasks-note fade-in">
-      Task specifications and evaluation protocols will be released with the simulation benchmark.
-      Detailed task descriptions coming soon.
+      Task specifications, evaluation protocols, and simulation environments will be released as part of the benchmark framework.
     </p>
 
   </div>
@@ -590,11 +640,14 @@
       <span class="sched-legend-item legend-talk">
         <span class="legend-dot"></span>Invited Talk
       </span>
+      <span class="sched-legend-item legend-competition">
+        <span class="legend-dot"></span>Competition
+      </span>
       <span class="sched-legend-item legend-poster">
         <span class="legend-dot"></span>Poster &amp; Break
       </span>
-      <span class="sched-legend-item legend-award">
-        <span class="legend-dot"></span>Awards
+      <span class="sched-legend-item legend-panel">
+        <span class="legend-dot"></span>Panel
       </span>
       <span class="sched-legend-item legend-lunch">
         <span class="legend-dot"></span>Networking
@@ -636,9 +689,9 @@
         <div class="sched-body">
           <div class="sched-meta">
             <span class="type-badge badge-talk">Invited Talk 1</span>
-            <span class="sched-dur">20 min</span>
+            <span class="sched-dur">15'+5' Q&amp;A</span>
           </div>
-          <div class="sched-session">Embodied AI and Real-World Robot Learning for Mobile Manipulation</div>
+          <div class="sched-session">Long-Horizon Mobile Manipulation in the Wild</div>
           <div class="sched-speaker">
             <span class="speaker-name">Prof. Abhinav Valada</span>
             <span class="speaker-affil">University of Freiburg</span>
@@ -659,18 +712,18 @@
         <div class="sched-body">
           <div class="sched-meta">
             <span class="type-badge badge-talk">Invited Talk 2</span>
-            <span class="sched-dur">20 min</span>
+            <span class="sched-dur">15'+5' Q&amp;A</span>
           </div>
-          <div class="sched-session sched-tbd">Title TBD</div>
+          <div class="sched-session">Robot Benchmarking in Simulation and Real World: What can we learn that transfers?</div>
           <div class="sched-speaker">
-            <span class="speaker-name">Prof. He Wang</span>
-            <span class="speaker-affil">Peking University</span>
+            <span class="speaker-name">Prof. Roberto Martín-Martín</span>
+            <span class="speaker-affil">UT Austin</span>
           </div>
         </div>
       </div>
 
-      <!-- 09:20 Talk 3 -->
-      <div class="sched-row sched-talk">
+      <!-- 09:20 Competition Highlights -->
+      <div class="sched-row sched-competition">
         <div class="sched-time-col">
           <span class="sched-t-start">09:20</span>
           <span class="sched-t-end">09:40</span>
@@ -681,45 +734,25 @@
         </div>
         <div class="sched-body">
           <div class="sched-meta">
-            <span class="type-badge badge-talk">Invited Talk 3</span>
+            <!-- Trophy icon -->
+            <svg class="sched-icon-competition" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M10 1a.75.75 0 0 1 .75.75v1.5h3a.75.75 0 0 1 .648 1.127l-1.5 2.598A3.751 3.751 0 0 1 10.75 9.9V11h.5a.75.75 0 0 1 0 1.5h-.5v1h1.25a.75.75 0 0 1 0 1.5h-4a.75.75 0 0 1 0-1.5H9.25v-1h-.5a.75.75 0 0 1 0-1.5h.5V9.9a3.751 3.751 0 0 1-2.148-3.025L5.602 4.377A.75.75 0 0 1 6.25 3.25h3V1.75A.75.75 0 0 1 10 1ZM7.214 4.75l1.05 1.817a2.25 2.25 0 0 0 3.472 0l1.05-1.817H7.214Z" clip-rule="evenodd"/>
+            </svg>
+            <span class="type-badge badge-competition">Competition</span>
             <span class="sched-dur">20 min</span>
           </div>
-          <div class="sched-session">HOPT: Transferring Natural Human Demonstrations to Robot Dexterity</div>
-          <div class="sched-speaker">
-            <span class="speaker-name">Prof. Shaowei Cui</span>
-            <span class="speaker-affil">South China University of Technology</span>
+          <div class="sched-session">Competition Highlights: Winner Teams</div>
+          <div class="sched-speaker sched-competition-teams">
+            1<sup>st</sup>, 2<sup>nd</sup>, and 3<sup>rd</sup> place teams present their approaches (5 min each + Q&amp;A)
           </div>
         </div>
       </div>
 
-      <!-- 09:40 Talk 4 -->
-      <div class="sched-row sched-talk">
-        <div class="sched-time-col">
-          <span class="sched-t-start">09:40</span>
-          <span class="sched-t-end">10:00</span>
-        </div>
-        <div class="sched-track-col" aria-hidden="true">
-          <div class="sched-dot"></div>
-          <div class="sched-line"></div>
-        </div>
-        <div class="sched-body">
-          <div class="sched-meta">
-            <span class="type-badge badge-talk">Invited Talk 4</span>
-            <span class="sched-dur">20 min</span>
-          </div>
-          <div class="sched-session">ManipulationNet</div>
-          <div class="sched-speaker">
-            <span class="speaker-name">NIST Representative</span>
-            <span class="speaker-affil">NIST</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- 10:00 Poster + Coffee -->
+      <!-- 09:40 Poster + Coffee -->
       <div class="sched-row sched-poster">
         <div class="sched-time-col">
-          <span class="sched-t-start">10:00</span>
-          <span class="sched-t-end">10:40</span>
+          <span class="sched-t-start">09:40</span>
+          <span class="sched-t-end">10:25</span>
         </div>
         <div class="sched-track-col" aria-hidden="true">
           <div class="sched-dot"></div>
@@ -729,18 +762,18 @@
           <div class="sched-meta">
             <span class="type-badge badge-poster">Poster</span>
             <span class="type-badge badge-break">Coffee</span>
-            <span class="sched-dur">40 min</span>
+            <span class="sched-dur">45 min</span>
           </div>
           <div class="sched-session">Poster Session &amp; Coffee Break</div>
           <div class="sched-speaker">Interactive poster presentations and networking</div>
         </div>
       </div>
 
-      <!-- 10:40 Talk 5 -->
+      <!-- 10:25 Talk 3 -->
       <div class="sched-row sched-talk">
         <div class="sched-time-col">
-          <span class="sched-t-start">10:40</span>
-          <span class="sched-t-end">11:00</span>
+          <span class="sched-t-start">10:25</span>
+          <span class="sched-t-end">10:45</span>
         </div>
         <div class="sched-track-col" aria-hidden="true">
           <div class="sched-dot"></div>
@@ -748,22 +781,22 @@
         </div>
         <div class="sched-body">
           <div class="sched-meta">
-            <span class="type-badge badge-talk">Invited Talk 5</span>
-            <span class="sched-dur">20 min</span>
+            <span class="type-badge badge-talk">Invited Talk 3</span>
+            <span class="sched-dur">15'+5' Q&amp;A</span>
           </div>
-          <div class="sched-session">Robot Benchmarking in Simulation and Real World</div>
+          <div class="sched-session">What Is Still Missing to Bring Mobile Manipulation Robots into the Real World</div>
           <div class="sched-speaker">
-            <span class="speaker-name">Prof. Roberto Martín-Martín</span>
-            <span class="speaker-affil">UT Austin</span>
+            <span class="speaker-name">Prof. Georgia Chalvatzaki</span>
+            <span class="speaker-affil">TU Darmstadt &nbsp;·&nbsp; IEEE RAS TC on Mobile Manipulation</span>
           </div>
         </div>
       </div>
 
-      <!-- 11:00 Talk 6 -->
+      <!-- 10:45 Talk 4 -->
       <div class="sched-row sched-talk">
         <div class="sched-time-col">
-          <span class="sched-t-start">11:00</span>
-          <span class="sched-t-end">11:20</span>
+          <span class="sched-t-start">10:45</span>
+          <span class="sched-t-end">11:05</span>
         </div>
         <div class="sched-track-col" aria-hidden="true">
           <div class="sched-dot"></div>
@@ -771,31 +804,8 @@
         </div>
         <div class="sched-body">
           <div class="sched-meta">
-            <span class="type-badge badge-talk">Invited Talk 6</span>
-            <span class="sched-dur">20 min</span>
-          </div>
-          <div class="sched-session sched-tbd">Title TBD</div>
-          <div class="sched-speaker">
-            <span class="speaker-name">Dr. Torsten Kroeger</span>
-            <span class="speaker-affil">Intrinsic (Google)</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- 11:20 Talk 7 -->
-      <div class="sched-row sched-talk">
-        <div class="sched-time-col">
-          <span class="sched-t-start">11:20</span>
-          <span class="sched-t-end">11:40</span>
-        </div>
-        <div class="sched-track-col" aria-hidden="true">
-          <div class="sched-dot"></div>
-          <div class="sched-line"></div>
-        </div>
-        <div class="sched-body">
-          <div class="sched-meta">
-            <span class="type-badge badge-talk">Invited Talk 7</span>
-            <span class="sched-dur">20 min</span>
+            <span class="type-badge badge-talk">Invited Talk 4</span>
+            <span class="sched-dur">15'+5' Q&amp;A</span>
           </div>
           <div class="sched-session sched-tbd">Title TBD</div>
           <div class="sched-speaker">
@@ -805,11 +815,11 @@
         </div>
       </div>
 
-      <!-- 11:40 Talk 8 -->
+      <!-- 11:05 Talk 5 -->
       <div class="sched-row sched-talk">
         <div class="sched-time-col">
-          <span class="sched-t-start">11:40</span>
-          <span class="sched-t-end">12:00</span>
+          <span class="sched-t-start">11:05</span>
+          <span class="sched-t-end">11:25</span>
         </div>
         <div class="sched-track-col" aria-hidden="true">
           <div class="sched-dot"></div>
@@ -817,21 +827,54 @@
         </div>
         <div class="sched-body">
           <div class="sched-meta">
-            <span class="type-badge badge-talk">Invited Talk 8</span>
-            <span class="sched-dur">20 min</span>
+            <span class="type-badge badge-talk">Invited Talk 5</span>
+            <span class="sched-dur">15'+5' Q&amp;A</span>
           </div>
-          <div class="sched-session sched-tbd">Title TBD</div>
+          <div class="sched-session">Learning Diverse Whole-Body Manipulation Skills for Humanoid Robots</div>
           <div class="sched-speaker">
-            <span class="speaker-name">Prof. Georgia Chalvatzaki</span>
-            <span class="speaker-affil">TU Darmstadt</span>
+            <span class="speaker-name">Prof. He Wang</span>
+            <span class="speaker-affil">Peking University</span>
           </div>
         </div>
       </div>
 
-      <!-- 12:00 Award -->
-      <div class="sched-row sched-award">
+      <!-- 11:25 Panel -->
+      <div class="sched-row sched-panel">
         <div class="sched-time-col">
-          <span class="sched-t-start">12:00</span>
+          <span class="sched-t-start">11:25</span>
+          <span class="sched-t-end">11:55</span>
+        </div>
+        <div class="sched-track-col" aria-hidden="true">
+          <div class="sched-dot"></div>
+          <div class="sched-line"></div>
+        </div>
+        <div class="sched-body">
+          <div class="sched-meta">
+            <span class="type-badge badge-panel">Panel Discussion</span>
+            <span class="sched-dur">30 min</span>
+          </div>
+          <div class="sched-session">Panel Discussion</div>
+          <div class="sched-speaker sched-panel-people">
+            <div class="panel-host">
+              <span class="panel-role">Host</span>
+              <span class="speaker-name">Dr. Wenkai Chen</span>
+            </div>
+            <div class="panel-panelists">
+              <span class="panel-role">Panelists</span>
+              <ul class="panel-list">
+                <li>Prof. Dr. Stefan Schaal <span class="speaker-affil">Intrinsic</span> <span class="pending-tag">pending</span></li>
+                <li>Kenny Kimble <span class="speaker-affil">NIST</span></li>
+                <li>Prof. Shaowei Cui <span class="speaker-affil">South China University of Technology</span> <span class="pending-tag">pending</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 11:55 Awards -->
+      <div class="sched-row sched-competition">
+        <div class="sched-time-col">
+          <span class="sched-t-start">11:55</span>
           <span class="sched-t-end">12:30</span>
         </div>
         <div class="sched-track-col" aria-hidden="true">
@@ -840,8 +883,11 @@
         </div>
         <div class="sched-body">
           <div class="sched-meta">
-            <span class="type-badge badge-award">Award</span>
-            <span class="sched-dur">30 min</span>
+            <svg class="sched-icon-competition" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M10 1a.75.75 0 0 1 .75.75v1.5h3a.75.75 0 0 1 .648 1.127l-1.5 2.598A3.751 3.751 0 0 1 10.75 9.9V11h.5a.75.75 0 0 1 0 1.5h-.5v1h1.25a.75.75 0 0 1 0 1.5h-4a.75.75 0 0 1 0-1.5H9.25v-1h-.5a.75.75 0 0 1 0-1.5h.5V9.9a3.751 3.751 0 0 1-2.148-3.025L5.602 4.377A.75.75 0 0 1 6.25 3.25h3V1.75A.75.75 0 0 1 10 1ZM7.214 4.75l1.05 1.817a2.25 2.25 0 0 0 3.472 0l1.05-1.817H7.214Z" clip-rule="evenodd"/>
+            </svg>
+            <span class="type-badge badge-competition">Competition</span>
+            <span class="sched-dur">35 min</span>
           </div>
           <div class="sched-session">Best Poster Award &amp; Competition Award</div>
           <div class="sched-speaker">Recognition of outstanding poster presentations and benchmark competition results</div>
@@ -960,11 +1006,6 @@
           <div class="org-card-affil">NYCU, Taiwan</div>
         </div>
 
-        <div class="org-card">
-          <div class="org-avatar" style="--sp-hue:355;">CF</div>
-          <div class="org-card-name">Prof. Chuchu Fan</div>
-          <div class="org-card-affil">MIT</div>
-        </div>
 
       </div><!-- /.org-grid -->
     </div><!-- /.org-subsection -->
@@ -1058,8 +1099,13 @@
         <div class="sponsor-logo sponsor-logo-lg">
           <!-- swap with: <img src="img/sponsors/agile-robots.svg" alt="Agile Robots"> -->
           <span class="sponsor-name">Agile Robots</span>
-          <span class="sponsor-desc">Hardware support · Munich, Beijing &amp; Pittsburgh testbeds</span>
+          <span class="sponsor-desc">Hardware support · Beijing, Hamburg, Munich &amp; Pittsburgh testbeds</span>
         </div>
+        <a href="https://franka.de" target="_blank" rel="noopener" class="sponsor-logo sponsor-logo-lg sponsor-logo-link">
+          <!-- swap with: <img src="img/sponsors/franka-robotics.svg" alt="Franka Robotics"> -->
+          <span class="sponsor-name">Franka Robotics</span>
+          <span class="sponsor-desc">Mobile FR3 Duo platform provider</span>
+        </a>
       </div>
     </div>
 
@@ -1073,14 +1119,19 @@
           <span class="sponsor-desc">Taipei Computer Association</span>
         </div>
         <div class="sponsor-logo">
-          <span class="sponsor-name">RobotGym</span>
-          <span class="sponsor-desc">Community Sponsor</span>
-        </div>
-        <div class="sponsor-logo">
           <!-- swap with: <img src="img/sponsors/mech-mind.svg" alt="Mech-Mind"> -->
           <span class="sponsor-name">Mech-Mind</span>
           <span class="sponsor-desc">Community Sponsor</span>
         </div>
+        <div class="sponsor-logo">
+          <span class="sponsor-name">RobotGym</span>
+          <span class="sponsor-desc">Community Sponsor</span>
+        </div>
+        <a href="https://www.amd.com" target="_blank" rel="noopener" class="sponsor-logo sponsor-logo-link">
+          <!-- swap with: <img src="img/sponsors/amd.svg" alt="AMD"> -->
+          <span class="sponsor-name">AMD</span>
+          <span class="sponsor-desc">Community Sponsor</span>
+        </a>
       </div>
     </div>
 
@@ -1201,6 +1252,10 @@
           for Real-World Embodied Bimanual Manipulation
         </p>
         <p class="footer-venue">
+          <picture>
+            <source srcset="img/IROS_2026_logo.webp" type="image/webp" />
+            <img src="img/IROS_2026_logo.webp" alt="IROS 2026 Pittsburgh" class="footer-iros-logo" loading="lazy" />
+          </picture>
           Part of IROS 2026 &nbsp;·&nbsp; Pittsburgh, PA, USA
         </p>
       </div>
@@ -1210,6 +1265,7 @@
           <div class="footer-nav-heading">Workshop</div>
           <a href="#overview">Overview</a>
           <a href="#benchmark">Benchmark</a>
+          <a href="#platform">Platform</a>
           <a href="#tasks">Tasks</a>
           <a href="#schedule">Schedule</a>
         </div>
