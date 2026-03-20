@@ -17,13 +17,22 @@ iros-ebim.github.io/
 ├── css/
 │   └── style.css           # All styles
 ├── js/
-│   └── main.js             # Scroll effects, nav, animations
+│   └── main.js             # Scroll effects, nav, fade-in animations
 ├── img/
-│   └── favicon.svg         # Site favicon
+│   ├── favicon.svg         # Site favicon
+│   ├── IROS_2026_logo.webp # IROS 2026 Pittsburgh logo (hero + footer)
+│   ├── og-cover.png        # Open Graph / Twitter card image — to be added
+│   ├── platform/           # Competition robot photos
+│   │   ├── Mobile_FR3_Duo_Front_View.png
+│   │   └── Mobile_FR3_Duo_Top_View.png
 │   ├── organizers/         # Organizer headshots — to be added (jpg/png, ~300×300px)
-│   ├── speakers/           # Speaker headshots — to be added
-│   ├── tasks/              # Benchmark task images — to be added
 │   └── sponsors/           # Sponsor logos — to be added (png with transparency preferred)
+│       ├── agile-robots.svg
+│       ├── franka-robotics.svg
+│       ├── tca.svg
+│       ├── mech-mind.svg
+│       ├── robotgym.svg
+│       └── amd.svg
 ├── CNAME                   # GitHub Pages domain → iros-ebim.github.io
 └── README.md
 ```
@@ -48,31 +57,93 @@ python -m http.server 8000
 
 ---
 
+## Sections
+
+| Section | ID | Status |
+|---|---|---|
+| Hero | `#home` | ✅ Complete |
+| Workshop Overview | `#overview` | ✅ Complete |
+| Benchmark Framework | `#benchmark` | ✅ Complete |
+| Competition Platform | `#platform` | ✅ Complete |
+| Benchmark Tasks | `#tasks` | ✅ Complete (3 tasks) |
+| Call for Participation | `#call-for-participation` | ✅ Complete |
+| Schedule | `#schedule` | ✅ Complete |
+| Organizing Committee | `#organizers` | ✅ Complete |
+| Sponsors & Support | `#sponsors` | Placeholder logos |
+| Contact / Key Dates | `#contact` | Dates TBC |
+
+---
+
+## Workshop Program (Final Proposal)
+
+**Format:** Half-day morning session — exact date within September 27 – October 1, 2026
+
+| Time | Session |
+|------|---------|
+| 08:30–08:40 | Opening Remarks |
+| 08:40–09:00 | Invited Talk 1 — Prof. Abhinav Valada (Freiburg) |
+| 09:00–09:20 | Invited Talk 2 — Prof. Roberto Martín-Martín (UT Austin) |
+| 09:20–09:40 | Competition Highlights — Winner Teams (1st, 2nd, 3rd place) |
+| 09:40–10:25 | Poster Session & Coffee Break |
+| 10:25–10:45 | Invited Talk 3 — Prof. Georgia Chalvatzaki (TU Darmstadt) |
+| 10:45–11:05 | Invited Talk 4 — Prof. Chuchu Fan (MIT) |
+| 11:05–11:25 | Invited Talk 5 — Prof. He Wang (Peking University) |
+| 11:25–11:55 | Panel Discussion — Host: Dr. Wenkai Chen |
+| 11:55–12:30 | Best Poster Award & Competition Award |
+| 12:30–13:30 | Sponsored Lunch & Networking |
+
+---
+
+## Benchmark Tasks (3 Core Tasks)
+
+1. **Cable Routing & Plugging** — Contact-rich, sequential
+2. **Deformable Material Handling (Thermal Pad Placement)** — Deformable, precision
+3. **Caregiving & Feeding** — Human-centered, safety-critical
+
+---
+
+## Competition Platform
+
+**Mobile FR3 Duo by Franka Robotics** — deployed at all four testbed sites:
+Beijing · Hamburg · Munich · Pittsburgh
+
+---
+
 ## Content To-Do
 
-### Done
-- [x] Speakers section: 8 confirmed speakers added with names, affiliations, and talk titles
-- [x] Organizers section: Organizing Committee, Advisory Board, and Competition Support Team populated
-- [x] Schedule: confirmed 8-talk half-day program with updated timings (08:30–13:30)
-- [x] Branding: unified under IROS-EBiM across all files (site name, URLs, email, repo)
+### Resolved
+- [x] Schedule: final 5-talk + competition + panel program (08:30–13:30)
+- [x] Benchmark tasks: narrowed to 3 core tasks (removed Table Cleaning, Clothes Folding, Cluttered Retrieval)
+- [x] Organizers: 11-person Organizing Committee + Advisory Board + Competition Support Team
+- [x] Removed Chuchu Fan from organizers (invited speaker only)
+- [x] Removed Dr. Torsten Kroeger and NIST ManipulationNet talk slots
+- [x] He Wang talk title confirmed: "Learning Diverse Whole-Body Manipulation Skills for Humanoid Robots"
+- [x] Chalvatzaki affiliation: TU Darmstadt / IEEE RAS TC on Mobile Manipulation
+- [x] Robot Platform section added (Mobile FR3 Duo, specs grid, front + top view photos)
+- [x] IROS 2026 logo added to hero and footer
+- [x] Sponsors: Franka Robotics (Tier 1) and AMD (Community) added
+- [x] Hamburg added as 4th testbed city throughout
+- [x] Branding: unified under IROS-EBiM (site name, URLs, email, repo)
 - [x] CNAME set to `iros-ebim.github.io`
 
-### Still needed
-- [ ] Add real headshots to `/img/organizers/` and `/img/speakers/` (currently using initials avatars)
-- [ ] Confirm and fill in NIST Representative name (currently listed as "NIST Representative")
-- [ ] Fill in TBD talk titles for Speakers 2 (He Wang), 6 (Kroeger), 7 (Chuchu Fan), 8 (Chalvatzaki)
-- [ ] Fill in submission deadlines in the Call for Participation section
-- [ ] Add sponsor logos to `/img/sponsors/` and update the Sponsors section
+### Still Needed
+- [ ] Add real headshots to `img/organizers/` (currently using initials avatars)
+- [ ] Add sponsor logos to `img/sponsors/` (currently using text placeholders)
 - [ ] Add Open Graph cover image (`img/og-cover.png`) for social sharing previews
+- [ ] Confirm exact workshop date within September 27 – October 1 window
+- [ ] Fill in submission deadlines in the Call for Participation / Key Dates section
+- [ ] Confirm Stefan Schaal (Intrinsic) and Shaowei Cui panel participation (currently marked "pending")
+- [ ] Fill in Chuchu Fan talk title (currently "Title TBD")
+
+---
 
 ## Image Guidelines
 
 | Folder | Format | Recommended size |
 |---|---|---|
 | organizers/ | JPG or PNG | 300 × 300 px |
-| speakers/   | JPG or PNG | 300 × 300 px |
-| tasks/      | JPG or PNG | 800 × 500 px |
-| sponsors/   | PNG (transparent bg preferred) | 400 × 160 px |
+| sponsors/ | SVG or PNG (transparent bg) | 400 × 160 px |
+| platform/ | PNG | Original resolution |
 
 ---
 
