@@ -161,7 +161,9 @@ section:nth-child(even) { background: var(--bg-light); }
   position: relative;
   background: var(--bg-dark);
   overflow: hidden;
-  padding: 0;
+  /* Top pad clears the fixed navbar; bottom pad keeps scroll arrow from overlapping */
+  padding: calc(var(--nav-h) + 2rem) 0 5rem;
+  box-sizing: border-box;
 }
 
 /* Animated grid background */
@@ -323,6 +325,37 @@ section:nth-child(even) { background: var(--bg-light); }
 @keyframes bounce {
   0%, 100% { transform: translateX(-50%) translateY(0); }
   50%       { transform: translateX(-50%) translateY(6px); }
+}
+
+/* ── Hero height-based compression (independent of viewport width) ── */
+
+/* Short viewports: 16:10 laptop at 200% scaling (~900px CSS), landscape phones */
+@media (max-height: 900px) {
+  #home { padding-top: calc(var(--nav-h) + 1rem); padding-bottom: 4rem; }
+  .hero-iros-logo { margin-bottom: 1rem; }
+  .hero-iros-logo img { height: 100px; }
+  .hero-badge { margin-bottom: 1.1rem; }
+  .hero-title { font-size: clamp(1.5rem, 3.5vw, 2.4rem); margin-bottom: 0.85rem; }
+  .hero-subtitle { margin-bottom: 0.4rem; }
+  .hero-date { margin-bottom: 1.5rem; }
+  .hero-actions { margin-bottom: 1rem; }
+}
+
+/* Very short viewports: landscape phones, ultra-compact laptops */
+@media (max-height: 700px) {
+  #home { padding-top: calc(var(--nav-h) + 0.5rem); padding-bottom: 3rem; }
+  .hero-iros-logo { margin-bottom: 0.6rem; }
+  .hero-iros-logo img { height: 70px; }
+  .hero-badge { margin-bottom: 0.75rem; font-size: .72rem; }
+  .hero-title { font-size: clamp(1.35rem, 3vw, 2rem); margin-bottom: 0.6rem; }
+  .hero-subtitle { margin-bottom: 0.3rem; font-size: .95rem; }
+  .hero-date { margin-bottom: 1rem; }
+  .hero-actions { margin-bottom: 0.75rem; }
+}
+
+/* Hide scroll arrow when there's no vertical room for it */
+@media (max-height: 600px) {
+  .scroll-indicator { display: none; }
 }
 
 /* ---------- Overview ---------- */
