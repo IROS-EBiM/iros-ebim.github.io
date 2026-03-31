@@ -21,18 +21,22 @@ iros-ebim.github.io/
 ├── img/
 │   ├── favicon.svg         # Site favicon
 │   ├── IROS_2026_logo.webp # IROS 2026 Pittsburgh logo (hero + footer)
-│   ├── og-cover.png        # Open Graph / Twitter card image — to be added
+│   ├── og-cover.png        # Open Graph / Twitter card image
 │   ├── platform/           # Competition robot photos
 │   │   ├── Mobile_FR3_Duo_Front_View.png
 │   │   └── Mobile_FR3_Duo_Top_View.png
 │   ├── organizers/         # Organizer headshots — to be added (jpg/png, ~300×300px)
-│   └── sponsors/           # Sponsor logos — to be added (png with transparency preferred)
-│       ├── agile-robots.svg
-│       ├── franka-robotics.svg
-│       ├── tca.svg
-│       ├── mech-mind.svg
-│       ├── robotgym.svg
-│       └── amd.svg
+│   └── sponsors/           # Sponsor logos
+│       ├── agile_robots.svg        # Agile Robots (white; brightness(0) filter applied)
+│       ├── agile_robots_dark.jpg   # Agile Robots dark variant
+│       ├── franka_robotics.svg     # Franka Robotics
+│       ├── franka_robotics_white.png
+│       ├── tca.png                 # Taipei Computer Association
+│       ├── mech_mind.png           # Mech-Mind (dark)
+│       ├── mech_mind_white.png
+│       ├── robotgym.webp           # RobotGym (dark)
+│       ├── robotgym_white.webp
+│       └── amd.svg                 # AMD (white; brightness(0) filter applied)
 ├── CNAME                   # GitHub Pages domain → iros-ebim.github.io
 └── README.md
 ```
@@ -69,7 +73,7 @@ python -m http.server 8000
 | Call for Participation | `#call-for-participation` | ✅ Complete |
 | Schedule | `#schedule` | ✅ Complete |
 | Organizing Committee | `#organizers` | ✅ Complete |
-| Sponsors & Support | `#sponsors` | Placeholder logos |
+| Sponsors & Support | `#sponsors` | ✅ Complete |
 | Contact / Key Dates | `#contact` | Dates TBC |
 
 ---
@@ -125,14 +129,14 @@ Beijing · Hamburg · Munich · Pittsburgh
 - [x] Hamburg added as 4th testbed city throughout
 - [x] Branding: unified under IROS-EBiM (site name, URLs, email, repo)
 - [x] CNAME set to `iros-ebim.github.io`
+- [x] Sponsor logos: all 6 real logos live (Agile Robots, Franka, TCA, Mech-Mind, RobotGym, AMD)
+- [x] Open Graph cover image (`img/og-cover.png`) added for social sharing previews
+- [x] Stefan Schaal (Intrinsic) and Shaowei Cui confirmed as panelists (pending tags removed)
 
 ### Still Needed
 - [ ] Add real headshots to `img/organizers/` (currently using initials avatars)
-- [ ] Add sponsor logos to `img/sponsors/` (currently using text placeholders)
-- [ ] Add Open Graph cover image (`img/og-cover.png`) for social sharing previews
 - [ ] Confirm exact workshop date within September 27 – October 1 window
 - [ ] Fill in submission deadlines in the Call for Participation / Key Dates section
-- [ ] Confirm Stefan Schaal (Intrinsic) and Shaowei Cui panel participation (currently marked "pending")
 - [ ] Fill in Chuchu Fan talk title (currently "Title TBD")
 
 ---
