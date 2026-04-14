@@ -23,8 +23,8 @@ iros-ebim.github.io/
 │   ├── IROS_2026_logo.webp # IROS 2026 Pittsburgh logo (hero + footer)
 │   ├── og-cover.png        # Open Graph / Twitter card image
 │   ├── platform/           # Competition robot photos
-│   │   ├── Mobile_FR3_Duo_Front_View.png
-│   │   └── Mobile_FR3_Duo_Top_View.png
+│   │   ├── MFR3_Duo.png
+│   │   └── MFR3_Duo_with_workbench.png
 │   ├── organizers/         # Organizer headshots — to be added (jpg/png, ~300×300px)
 │   └── sponsors/           # Sponsor logos
 │       ├── agile_robots.svg        # Agile Robots (white; brightness(0) filter applied)
@@ -124,7 +124,9 @@ Beijing · Hamburg · Munich · Pittsburgh
 - [x] Removed Dr. Torsten Kroeger and NIST ManipulationNet talk slots
 - [x] He Wang talk title confirmed: "Learning Diverse Whole-Body Manipulation Skills for Humanoid Robots"
 - [x] Chalvatzaki affiliation: TU Darmstadt / IEEE RAS TC on Mobile Manipulation
-- [x] Robot Platform section added (Mobile FR3 Duo, specs grid, front + top view photos)
+- [x] Robot Platform section added (Mobile FR3 Duo, specs grid, front + workbench photos)
+- [x] Platform images updated to MFR3_Duo.png and MFR3_Duo_with_workbench.png (new brochure assets)
+- [x] Platform description updated from new brochure; sensors corrected to 7× Cameras; spec label "Computing" → "User PC"
 - [x] IROS 2026 logo added to hero and footer
 - [x] Sponsors: Franka Robotics (Tier 1) and AMD (Community) added
 - [x] Hamburg added as 4th testbed city throughout
