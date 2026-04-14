@@ -36,7 +36,8 @@ iros-ebim.github.io/
 │       ├── mech_mind_white.png
 │       ├── robotgym.webp           # RobotGym (dark)
 │       ├── robotgym_white.webp
-│       └── amd.svg                 # AMD (white; brightness(0) filter applied)
+│       ├── amd.svg                 # AMD (white; brightness(0) filter applied)
+│       └── google.svg              # Google (transparent bg; Computing Resources tier)
 ├── CNAME                   # GitHub Pages domain → iros-ebim.github.io
 └── README.md
 ```
@@ -132,12 +133,13 @@ Beijing · Hamburg · Munich · Pittsburgh
 - [x] Sponsor logos: all 6 real logos live (Agile Robots, Franka, TCA, Mech-Mind, RobotGym, AMD)
 - [x] Open Graph cover image (`img/og-cover.png`) added for social sharing previews
 - [x] Stefan Schaal (Intrinsic) and Shaowei Cui confirmed as panelists (pending tags removed)
+- [x] Chuchu Fan talk title confirmed: "Formal Visual Planning with Foundation Models"
+- [x] Google added as Computing Resources Sponsor (Tier 2, between Hardware and Community)
 
 ### Still Needed
 - [ ] Add real headshots to `img/organizers/` (currently using initials avatars)
 - [ ] Confirm exact workshop date within September 27 – October 1 window
 - [ ] Fill in submission deadlines in the Call for Participation / Key Dates section
-- [ ] Fill in Chuchu Fan talk title (currently "Title TBD")
 
 ---
 
