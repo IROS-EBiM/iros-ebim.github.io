@@ -38,7 +38,9 @@ iros-ebim.github.io/
 │       ├── robotgym_white.webp
 │       ├── amd.svg                 # AMD (white; brightness(0) filter applied)
 │       └── google.svg              # Google (transparent bg; Computing Resources tier)
-├── CNAME                   # GitHub Pages domain → iros-ebim.github.io
+├── robots.txt              # Crawler directives + sitemap pointer
+├── sitemap.xml             # Single-URL sitemap for Google Search Console
+├── .nojekyll               # Disable Jekyll processing on GitHub Pages
 └── README.md
 ```
 
@@ -58,7 +60,6 @@ python -m http.server 8000
 
 1. Push to the `main` branch of the `IROS-EBiM/iros-ebim.github.io` repository.
 2. GitHub Pages will auto-deploy at `https://iros-ebim.github.io`.
-3. If using a custom domain, update the `CNAME` file with your domain.
 
 ---
 
@@ -119,7 +120,7 @@ Beijing · Hamburg · Munich · Pittsburgh
 ### Resolved
 - [x] Schedule: final 5-talk + competition + panel program (08:30–13:30)
 - [x] Benchmark tasks: narrowed to 3 core tasks (removed Table Cleaning, Clothes Folding, Cluttered Retrieval)
-- [x] Organizers: 11-person Organizing Committee + Advisory Board + Competition Support Team
+- [x] Organizers: Organizing Committee (12), Advisory Board (4), Competition Support Team (6) complete
 - [x] Removed Chuchu Fan from organizers (invited speaker only)
 - [x] Removed Dr. Torsten Kroeger and NIST ManipulationNet talk slots
 - [x] He Wang talk title confirmed: "Learning Diverse Whole-Body Manipulation Skills for Humanoid Robots"
@@ -131,12 +132,15 @@ Beijing · Hamburg · Munich · Pittsburgh
 - [x] Sponsors: Franka Robotics (Tier 1) and AMD (Community) added
 - [x] Hamburg added as 4th testbed city throughout
 - [x] Branding: unified under IROS-EBiM (site name, URLs, email, repo)
-- [x] CNAME set to `iros-ebim.github.io`
 - [x] Sponsor logos: all 6 real logos live (Agile Robots, Franka, TCA, Mech-Mind, RobotGym, AMD)
 - [x] Open Graph cover image (`img/og-cover.png`) added for social sharing previews
 - [x] Stefan Schaal (Intrinsic) and Shaowei Cui confirmed as panelists (pending tags removed)
 - [x] Chuchu Fan talk title confirmed: "Formal Visual Planning with Foundation Models"
 - [x] Google added as Computing Resources Sponsor (Tier 2, between Hardware and Community)
+- [x] SEO infrastructure added: `robots.txt`, `sitemap.xml`, `.nojekyll`, canonical link, JSON-LD Event schema
+- [x] Google Search Console verified for `https://iros-ebim.github.io/` (HTML-tag method)
+- [x] Organizers added: Shih-Chieh Chou (NYCU) → OC; Sven Parusel (Franka) → Advisory; Fatma Dhaoui (Franka) + Tianyi Wang (Agile) → Support Team
+- [x] Removed redundant `CNAME` file (pointed at default github.io URL, not a real custom domain)
 
 ### Still Needed
 - [ ] Add real headshots to `img/organizers/` (currently using initials avatars)
