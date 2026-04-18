@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://iros-ebim.github.io/sitemap.xml
