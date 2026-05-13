@@ -1608,6 +1608,101 @@ a.sponsor-logo-link:hover .sponsor-name { color: var(--accent-dark); }
 }
 .cfp-contact a { color: var(--accent); font-weight: 600; }
 
+/* ---------- Awards & Prizes ---------- */
+#awards { background: var(--bg-light); }
+
+.podium-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin: 0 auto 2rem;
+  max-width: 920px;
+}
+.podium-card {
+  background: var(--bg-white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 2rem 1.4rem 1.6rem;
+  text-align: center;
+  box-shadow: var(--card-shadow);
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+}
+.podium-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 40px rgba(0,0,0,.13);
+  border-color: rgba(234,179,8,.45);
+}
+.podium-card.podium-1 { border-top: 4px solid #eab308; }
+.podium-card.podium-2 { border-top: 4px solid #cbd5e1; }
+.podium-card.podium-3 { border-top: 4px solid #b45309; }
+.podium-medal {
+  font-size: 2.4rem;
+  line-height: 1;
+  display: block;
+  margin-bottom: .6rem;
+}
+.podium-place {
+  font-size: .8rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--text-mid);
+  margin-bottom: .35rem;
+}
+.podium-amount {
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin-bottom: .4rem;
+}
+.podium-note {
+  font-size: .8rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.prize-total {
+  background: linear-gradient(135deg, #fff8e1 0%, #fef3c7 100%);
+  border: 1px solid rgba(234,179,8,.35);
+  border-radius: 14px;
+  padding: 1.6rem 1.5rem;
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 1.5rem;
+}
+.prize-total-label {
+  font-size: .8rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: #a16207;
+  margin-bottom: .3rem;
+}
+.prize-total-amount {
+  font-size: clamp(1.4rem, 3vw, 1.9rem);
+  font-weight: 800;
+  color: #78350f;
+}
+.prize-notes {
+  max-width: 720px;
+  margin: 0 auto;
+  font-size: .9rem;
+  color: var(--text-mid);
+  line-height: 1.55;
+  text-align: center;
+}
+.prize-notes p { margin: 0 0 .6rem; }
+.prize-notes a { color: var(--accent-dark); text-decoration: underline; }
+
+@media (max-width: 900px) {
+  .podium-grid { gap: 1rem; }
+  .podium-card { padding: 1.4rem 1rem 1.2rem; }
+  .podium-amount { font-size: 1.2rem; }
+}
+@media (max-width: 540px) {
+  .podium-grid { grid-template-columns: 1fr; }
+}
+
 /* ---------- Footer ---------- */
 footer {
   background: #040711;
