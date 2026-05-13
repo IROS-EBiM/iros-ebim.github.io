@@ -62,13 +62,17 @@ iros-ebim.github.io/
 │   │   ├── agile_robots_dark.jpg        # Agile Robots dark variant
 │   │   ├── franka_robotics.svg          # Franka Robotics
 │   │   ├── franka_robotics_white.png
+│   │   ├── vrb.svg                      # Virtual Research Building (Infrastructure & Framework)
+│   │   ├── rig.png                      # Robotics Institute Germany (Infrastructure & Framework)
+│   │   ├── google.svg                   # Google (Computing Resources tier)
+│   │   ├── alibaba_cloud.svg            # Alibaba Cloud (Computing Resources tier)
 │   │   ├── tca.png                      # Taipei Computer Association
 │   │   ├── mech_mind.png                # Mech-Mind (dark)
 │   │   ├── mech_mind_white.png
 │   │   ├── robotgym.webp                # RobotGym (dark)
 │   │   ├── robotgym_white.webp
 │   │   ├── amd.svg                      # AMD (white; brightness(0) filter)
-│   │   └── google.svg                   # Google (Computing Resources tier)
+│   │   └── hhri.webp                    # Hon Hai Research Institute (Community)
 │   ├── speakers/                        # (reserved — not used yet)
 │   └── tasks/                           # (reserved — not used yet)
 ├── robots.txt                           # Allow-all + sitemap pointer
@@ -108,7 +112,7 @@ Push to `main` of `IROS-EBiM/iros-ebim.github.io`; GitHub Pages auto-deploys at 
 | Key Themes | `#themes` | 4 research-question cards (sim-to-real, cross-site repro, foundation/VLA, contact-rich) |
 | Important Dates | `#dates` | 2-column track summary (Competition vs Workshop dates) |
 | Organizers | `#organizers` | Organizing Committee, Advisory Board, Competition Support Team |
-| Sponsors | `#sponsors` | Hardware & Platform · Computing Resources · Community |
+| Sponsors | `#sponsors` | Hardware & Platform · Infrastructure & Framework · Computing Resources · Community |
 | Get Involved | `#contact` | Dual CTA + email contact (dark section) |
 
 ### Competition (`competition.html`)
@@ -123,7 +127,7 @@ Push to `main` of `IROS-EBiM/iros-ebim.github.io`; GitHub Pages auto-deploys at 
 | Benchmark Tasks | `#tasks` | 3 task cards (cable routing, deformable, caregiving) |
 | Cross-Continent Testbeds | `#testbeds` | 4 site cards (Hamburg, Munich, Pittsburgh, Shanghai) |
 | Call for Participation | `#call-for-participation` | Phase I / Phase II / Eligibility cards + key dates |
-| Sponsors | `#sponsors` | Same tier structure as Home |
+| Sponsors | `#sponsors` | Same tier structure as Home, plus a Community Resources callout (Franka Community) |
 | Workshop callout | (banner) | "Looking for the Workshop?" → workshop.html |
 
 ### Workshop (`workshop.html`)
@@ -337,14 +341,16 @@ Every `<img>` has `alt`, `width`, `height` (CLS prevention), `loading="lazy"`, a
 - [x] Shared navbar + footer (byte-identical, comment-tagged)
 - [x] Schedule: final 5-talk + competition + panel program (08:30–13:30)
 - [x] Benchmark tasks: 3 core tasks
-- [x] Organizers: OC (12), Advisory (4), Support (6)
+- [x] Organizers: OC (11), Advisory (4), Support (10)
 - [x] He Wang talk title: "Learning Diverse Whole-Body Manipulation Skills for Humanoid Robots"
 - [x] Chuchu Fan talk title: "Formal Visual Planning with Foundation Models"
 - [x] Chalvatzaki affiliation: TU Darmstadt / IEEE RAS TC on Mobile Manipulation
 - [x] Mobile FR3 Duo platform section + photos
 - [x] IROS 2026 logo in hero/sub-hero and footer on all pages
-- [x] Sponsors: Hardware/Platform (Agile, Franka), Computing Resources (Google), Community (TCA, Mech-Mind, RobotGym, AMD)
-- [x] Hamburg + 4-testbed coverage
+- [x] Sponsors: Hardware & Platform (Agile, Franka), Infrastructure & Framework (VRB, RIG), Computing Resources (Google, Alibaba Cloud), Community (TCA, RobotGym, Mech-Mind, AMD, HHRI)
+- [x] Franka Community placements: sub-link under Franka Robotics card (both pages) + Community Resources callout (competition.html)
+- [x] 4-testbed coverage: Hamburg, Munich, Pittsburgh, Shanghai (Asia testbed moved from Beijing to Shanghai)
+- [x] Competition timeline finalized: Jun 16 (start), Jul 31 (sim end), Aug 15 – Aug 31 (real-robot), Sep 27 – Oct 1 (workshop)
 - [x] Branding unified under IROS-EBiM
 - [x] OG cover image at 1200×630 spec
 - [x] Stefan Schaal (Intrinsic) and Shaowei Cui confirmed as panelists
@@ -358,7 +364,9 @@ Every `<img>` has `alt`, `width`, `height` (CLS prevention), `loading="lazy"`, a
 ### Still needed
 - [ ] Real headshots in `img/organizers/` (currently using initials avatars)
 - [ ] Confirm exact workshop date within September 27 – October 1
-- [ ] Fill in submission deadlines on competition.html and workshop.html (currently TBD)
+- [ ] Confirm Final Results date on index.html Important Dates (currently TBD)
+- [ ] Fill in workshop poster submission deadlines on workshop.html (currently TBD)
+- [ ] Confirm Asia (Shanghai) partner lab — `testbed-institution` still reads "Partner lab TBD"
 - [ ] Optional: convert remaining sponsor PNGs to WebP for marginal extra perf
 
 ---
