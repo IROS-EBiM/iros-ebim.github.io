@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The EBiM Competition · Cross-Continent Robot Benchmark · IROS 2026</title>
-  <meta name="description" content="Open simulation benchmark plus real-robot validation on Mobile FR3 Duo platforms in Beijing, Hamburg, Munich, and Pittsburgh. Cable, deformable, caregiving." />
+  <meta name="description" content="Open simulation benchmark plus real-robot validation on Mobile FR3 Duo platforms in Hamburg, Munich, Pittsburgh, and Shanghai. Cable, deformable, caregiving." />
   <meta name="keywords" content="bimanual manipulation benchmark, robot competition, IROS 2026 challenge, Mobile FR3 Duo, Franka Robotics, sim-to-real, cable routing benchmark, deformable manipulation, robot caregiving, cross-laboratory reproducibility" />
 
   <!-- Canonical URL -->
@@ -18,7 +18,7 @@
   <meta property="og:site_name"       content="EBiM · IROS 2026 Workshop" />
   <meta property="og:url"             content="https://iros-ebim.github.io/competition.html" />
   <meta property="og:title"           content="The EBiM Competition · Cross-Continent Robot Benchmark · IROS 2026" />
-  <meta property="og:description"     content="Open simulation benchmark plus real-robot validation on Mobile FR3 Duo platforms in Beijing, Hamburg, Munich, and Pittsburgh. Cable, deformable, caregiving." />
+  <meta property="og:description"     content="Open simulation benchmark plus real-robot validation on Mobile FR3 Duo platforms in Hamburg, Munich, Pittsburgh, and Shanghai. Cable, deformable, caregiving." />
   <meta property="og:image"           content="https://iros-ebim.github.io/img/og-cover.jpg" />
   <meta property="og:image:width"     content="1200" />
   <meta property="og:image:height"    content="630" />
@@ -28,7 +28,7 @@
   <!-- Twitter / X Card -->
   <meta name="twitter:card"           content="summary_large_image" />
   <meta name="twitter:title"          content="The EBiM Competition · Cross-Continent Robot Benchmark · IROS 2026" />
-  <meta name="twitter:description"    content="Open simulation benchmark plus real-robot validation on Mobile FR3 Duo platforms in Beijing, Hamburg, Munich, and Pittsburgh. Cable, deformable, caregiving." />
+  <meta name="twitter:description"    content="Open simulation benchmark plus real-robot validation on Mobile FR3 Duo platforms in Hamburg, Munich, Pittsburgh, and Shanghai. Cable, deformable, caregiving." />
   <meta name="twitter:image"          content="https://iros-ebim.github.io/img/og-cover.jpg" />
   <meta name="twitter:image:alt"      content="IROS 2026 EBiM Workshop — Toward a Globally Coordinated Benchmark for Real-World Embodied Bimanual Manipulation" />
 
@@ -38,13 +38,13 @@
     "@context": "https://schema.org",
     "@type": "Event",
     "name": "EBiM Competition: Cross-Continent Bimanual Manipulation Benchmark",
-    "description": "Open simulation benchmark followed by real-robot validation on Mobile FR3 Duo platforms in Beijing, Hamburg, Munich, and Pittsburgh. Tasks include cable routing, deformable thermal-pad placement, and caregiving and feeding.",
-    "startDate": "2026-09-27",
+    "description": "Open simulation benchmark followed by real-robot validation on Mobile FR3 Duo platforms in Hamburg, Munich, Pittsburgh, and Shanghai. Tasks include cable routing, deformable thermal-pad placement, and caregiving and feeding.",
+    "startDate": "2026-06-16",
     "endDate": "2026-10-01",
     "eventStatus": "https://schema.org/EventScheduled",
     "eventAttendanceMode": "https://schema.org/MixedEventAttendanceMode",
     "location": [
-      {"@type": "Place", "name": "Beijing testbed", "address": {"@type": "PostalAddress", "addressLocality": "Beijing", "addressCountry": "CN"}},
+      {"@type": "Place", "name": "Shanghai testbed", "address": {"@type": "PostalAddress", "addressLocality": "Shanghai", "addressCountry": "CN"}},
       {"@type": "Place", "name": "University of Hamburg · TAMS Group", "address": {"@type": "PostalAddress", "addressLocality": "Hamburg", "addressCountry": "DE"}},
       {"@type": "Place", "name": "Agile Robots SE", "address": {"@type": "PostalAddress", "addressLocality": "Munich", "addressCountry": "DE"}},
       {"@type": "Place", "name": "Carnegie Mellon University", "address": {"@type": "PostalAddress", "addressLocality": "Pittsburgh", "addressRegion": "PA", "addressCountry": "US"}}
@@ -327,6 +327,22 @@
     @media (max-width: 640px) {
       .workshop-callout-inner { flex-direction: column; text-align: center; }
     }
+    .community-resource-card {
+      display: flex;
+      gap: 1.1rem;
+      align-items: flex-start;
+      background: var(--bg-light);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.25rem 1.5rem;
+      max-width: 640px;
+      text-decoration: none;
+      transition: border-color var(--transition), box-shadow var(--transition);
+    }
+    .community-resource-card:hover {
+      border-color: var(--accent);
+      box-shadow: 0 4px 20px rgba(0,212,255,.08);
+    }
   </style>
 </head>
 <body class="page-competition">
@@ -455,7 +471,7 @@
       <h2 class="section-title">Why This Benchmark</h2>
     </div>
     <p class="fade-in">
-      Bimanual manipulation benchmarks today are fragmented. Some evaluate algorithms only in simulation. Others test on a single robot in a single lab. Neither answers the question that matters most: do these methods generalize across platforms, environments, and operators? The EBiM Competition introduces a globally coordinated benchmark that combines an open simulation phase with cross-continent real-robot validation on identical Mobile FR3 Duo platforms. By validating top simulation methods on real hardware in Beijing, Hamburg, Munich, and Pittsburgh, we build the first reproducible, cross-laboratory benchmark for embodied bimanual manipulation.
+      Bimanual manipulation benchmarks today are fragmented. Some evaluate algorithms only in simulation. Others test on a single robot in a single lab. Neither answers the question that matters most: do these methods generalize across platforms, environments, and operators? The EBiM Competition introduces a globally coordinated benchmark that combines an open simulation phase with cross-continent real-robot validation on identical Mobile FR3 Duo platforms. By validating top simulation methods on real hardware in Hamburg, Munich, Pittsburgh, and Shanghai, we build the first reproducible, cross-laboratory benchmark for embodied bimanual manipulation.
     </p>
   </div>
 </section>
@@ -526,7 +542,7 @@
           <div class="phase-label">Phase II</div>
           <h3 class="phase-title">Cross-Continent Real-World Validation</h3>
           <p class="phase-desc">
-            Top simulation entries are validated on real robots at partner labs in Beijing, Hamburg, Munich, and Pittsburgh.
+            Top simulation entries are validated on real robots at partner labs in Hamburg, Munich, Pittsburgh, and Shanghai.
             Unified hardware protocols and teleoperation pipelines ensure cross-site comparability.
           </p>
         </div>
@@ -622,7 +638,7 @@
       <!-- Right: description + specs + attribution -->
       <div class="platform-info-col">
         <p class="platform-desc">
-          Mobile FR3 Duo extends the FR3 Duo reference platform into mobile environments by integrating it with Tactile Mobile Robot (TMR). It combines dual-arm manipulation, rich perception, and omnidirectional mobility into a single embodied AI system — enabling data collection and policy execution beyond fixed workcells. All competition testbeds in Beijing, Hamburg, Munich, and Pittsburgh use identical Mobile FR3 Duo platforms to ensure cross-site reproducibility.
+          Mobile FR3 Duo extends the FR3 Duo reference platform into mobile environments by integrating it with Tactile Mobile Robot (TMR). It combines dual-arm manipulation, rich perception, and omnidirectional mobility into a single embodied AI system — enabling data collection and policy execution beyond fixed workcells. All competition testbeds in Hamburg, Munich, Pittsburgh, and Shanghai use identical Mobile FR3 Duo platforms to ensure cross-site reproducibility.
         </p>
 
         <div class="platform-specs-grid">
@@ -823,9 +839,9 @@
 
       <div class="testbed-card">
         <span class="testbed-flag" aria-hidden="true">🇨🇳</span>
-        <div class="testbed-city">Beijing</div>
+        <div class="testbed-city">Shanghai</div>
         <div class="testbed-institution">Partner lab TBD</div>
-        <p class="testbed-role">Asia testbed for real-robot validation of top simulation entries.</p>
+        <p class="testbed-role">Asia testbed for cross-continent real-robot validation.</p>
       </div>
 
       <div class="testbed-card">
@@ -891,7 +907,7 @@
         </h3>
         <ul>
           <li>Top simulation entries validated on Mobile FR3 Duo</li>
-          <li>Identical platforms in Beijing, Hamburg, Munich, Pittsburgh</li>
+          <li>Identical platforms in Hamburg, Munich, Pittsburgh, Shanghai</li>
           <li>Unified teleoperation and calibration protocols</li>
           <li>Cross-site results aggregated for the leaderboard</li>
         </ul>
@@ -915,22 +931,30 @@
 
     <div class="cfp-dates fade-in" role="list" aria-label="Key dates">
       <div class="date-item" role="listitem">
-        <div class="date-label">Phase I — Benchmark Release</div>
-        <div class="date-value">TBD</div>
+        <div class="date-label">Phase I — Competition Start</div>
+        <div class="date-value">Jun 16, 2026</div>
       </div>
       <div class="date-item" role="listitem">
-        <div class="date-label">Phase I — Submission Deadline</div>
-        <div class="date-value">TBD</div>
+        <div class="date-label">Phase I — Simulation Phase End</div>
+        <div class="date-value">Jul 31, 2026</div>
       </div>
       <div class="date-item" role="listitem">
-        <div class="date-label">Phase II — Real-Robot Window</div>
-        <div class="date-value">TBD</div>
+        <div class="date-label">Phase II — Real-Robot Start</div>
+        <div class="date-value">Aug 15, 2026</div>
+      </div>
+      <div class="date-item" role="listitem">
+        <div class="date-label">Phase II — Real-Robot End</div>
+        <div class="date-value">Aug 31, 2026</div>
       </div>
       <div class="date-item date-item-highlight" role="listitem">
         <div class="date-label">Phase III — Workshop @ IROS 2026</div>
         <div class="date-value">Sep 27 – Oct 1, 2026</div>
       </div>
     </div>
+
+    <p class="fade-in" style="text-align:center;font-size:0.85rem;color:var(--text-muted);margin-top:1rem;">
+      Dates are tentative and subject to minor adjustments. Subscribe to updates via <a href="mailto:iros.ebim@gmail.com">iros.ebim@gmail.com</a>.
+    </p>
 
     <div class="cfp-actions fade-in">
       <a href="mailto:iros.ebim@gmail.com?subject=EBiM%20Competition%20-%20Register%20Interest" class="btn btn-primary">
@@ -968,27 +992,54 @@
       <div class="sponsors-logos">
         <a href="https://www.agile-robots.com" target="_blank" rel="noopener" class="sponsor-logo sponsor-logo-lg sponsor-logo-link" style="flex:1;">
           <img src="img/sponsors/agile_robots.svg" alt="Agile Robots logo" width="641" height="101" loading="lazy" decoding="async" style="max-height:70px;width:auto;display:block;margin:.9rem auto .3rem;filter:brightness(0);">
-          <span class="sponsor-desc">Hardware support · Beijing, Hamburg, Munich &amp; Pittsburgh testbeds</span>
+          <span class="sponsor-desc">Hardware support · Hamburg, Munich, Pittsburgh &amp; Shanghai testbeds</span>
         </a>
-        <a href="https://franka.de" target="_blank" rel="noopener" class="sponsor-logo sponsor-logo-lg sponsor-logo-link" style="flex:1.1;">
-          <img src="img/sponsors/franka_robotics.svg" alt="Franka Robotics logo" width="995" height="162" loading="lazy" decoding="async" style="max-height:100px;width:auto;display:block;margin:0 auto .6rem;">
-          <span class="sponsor-desc">Mobile FR3 Duo platform provider</span>
+        <div style="display:flex;flex-direction:column;align-items:center;gap:.45rem;flex:1.1;">
+          <a href="https://franka.de" target="_blank" rel="noopener"
+             class="sponsor-logo sponsor-logo-lg sponsor-logo-link" style="width:100%;">
+            <img src="img/sponsors/franka_robotics.svg" alt="Franka Robotics logo" width="995" height="162" loading="lazy" decoding="async" style="max-height:100px;width:auto;display:block;margin:0 auto .6rem;">
+            <span class="sponsor-desc">Mobile FR3 Duo platform provider</span>
+          </a>
+          <p style="font-size:.78rem;color:var(--text-muted);text-align:center;margin:0;">
+            Also join the
+            <a href="https://www.franka-community.de/" target="_blank" rel="noopener"
+               style="color:var(--accent-dark);font-weight:600;">Franka Community</a> →
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tier 2: Infrastructure & Framework -->
+    <div class="sponsors-tier fade-in">
+      <div class="tier-label">Infrastructure &amp; Framework Sponsors</div>
+      <div class="sponsors-logos">
+        <a href="https://vrb.ease-crc.org/" target="_blank" rel="noopener" class="sponsor-logo sponsor-logo-link">
+          <img src="img/sponsors/vrb.svg" alt="Virtual Research Building logo" loading="lazy" decoding="async" style="max-height:55px;width:auto;display:block;margin:0 auto .6rem;">
+          <span class="sponsor-desc">Research infrastructure framework</span>
+        </a>
+        <a href="https://robotics-institute-germany.de/" target="_blank" rel="noopener" class="sponsor-logo sponsor-logo-link">
+          <img src="img/sponsors/rig.png" alt="Robotics Institute Germany logo" loading="lazy" decoding="async" style="max-height:55px;width:auto;display:block;margin:0 auto .6rem;">
+          <span class="sponsor-desc">German national robotics research infrastructure</span>
         </a>
       </div>
     </div>
 
-    <!-- Tier 2: Computing Resources (prominent) -->
+    <!-- Tier 3: Computing Resources (prominent) -->
     <div class="sponsors-tier fade-in">
-      <div class="tier-label">Computing Resources Sponsor</div>
+      <div class="tier-label">Computing Resources Sponsors</div>
       <div class="sponsors-logos">
         <a href="https://cloud.google.com" target="_blank" rel="noopener" class="sponsor-logo sponsor-logo-lg sponsor-logo-link">
           <img src="img/sponsors/google.svg" alt="Google Cloud logo" width="272" height="92" loading="lazy" decoding="async" style="max-height:70px;width:auto;display:block;margin:0 auto .6rem;">
           <span class="sponsor-desc">Computing resources support</span>
         </a>
+        <a href="https://www.alibabacloud.com/" target="_blank" rel="noopener" class="sponsor-logo sponsor-logo-lg sponsor-logo-link">
+          <img src="img/sponsors/alibaba_cloud.svg" alt="Alibaba Cloud logo" loading="lazy" decoding="async" style="max-height:70px;width:auto;display:block;margin:0 auto .6rem;">
+          <span class="sponsor-desc">Cloud computing resources support</span>
+        </a>
       </div>
     </div>
 
-    <!-- Tier 3: Community (smaller, at the bottom) -->
+    <!-- Tier 4: Community (smaller, at the bottom) -->
     <div class="sponsors-tier fade-in" style="opacity:.92;">
       <div class="tier-label" style="font-size:.78rem;">Community Sponsors</div>
       <div class="sponsors-logos">
@@ -1007,6 +1058,37 @@
         <a href="https://www.amd.com" target="_blank" rel="noopener" class="sponsor-logo sponsor-logo-link">
           <img src="img/sponsors/amd.svg" alt="AMD logo" width="140" height="33" loading="lazy" decoding="async" style="max-height:42px;width:auto;display:block;margin:0 auto .5rem;filter:brightness(0);">
           <span class="sponsor-desc" style="font-size:.78rem;">Community Sponsor</span>
+        </a>
+        <a href="https://hhri.foxconn.com/" target="_blank" rel="noopener" class="sponsor-logo sponsor-logo-link">
+          <img src="img/sponsors/hhri.webp" alt="Hon Hai Research Institute logo" loading="lazy" decoding="async" style="max-height:42px;width:auto;display:block;margin:0 auto .5rem;">
+          <span class="sponsor-desc" style="font-size:.78rem;">Community support · Foxconn research arm</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Community Resources -->
+    <div class="sponsors-tier fade-in">
+      <div class="tier-label">Community Resources</div>
+      <div style="display:flex;justify-content:center;">
+        <a href="https://www.franka-community.de/" target="_blank" rel="noopener"
+           class="community-resource-card">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none"
+               viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6"
+               aria-hidden="true"
+               style="flex-shrink:0;color:var(--accent-dark);margin-top:.1rem;">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M17 20h5v-2a4 4 0 0 0-4-4h-1M9 20H4v-2a4 4 0 0 1 4-4h1m4-4a4 4 0 1 1-8 0 4 4 0 0 1 8 0Zm6 0a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
+          </svg>
+          <div>
+            <div style="font-weight:700;font-size:.95rem;color:var(--text-dark);margin-bottom:.25rem;">
+              Franka Community
+            </div>
+            <p style="font-size:.82rem;color:var(--text-mid);line-height:1.5;margin:0 0 .45rem;">
+              Online platform for Franka Robotics researchers and developers.
+              Discuss FR3 Duo integration, share code, and connect with other competitors.
+            </p>
+            <span style="font-size:.82rem;font-weight:600;color:var(--accent-dark);">Join →</span>
+          </div>
         </a>
       </div>
     </div>

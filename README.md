@@ -121,7 +121,7 @@ Push to `main` of `IROS-EBiM/iros-ebim.github.io`; GitHub Pages auto-deploys at 
 | Mobile FR3 Duo | `#platform` | Platform specs grid + 2 photos (WebP + PNG fallback) |
 | The Benchmark | `#benchmark` | 6-pillar framework |
 | Benchmark Tasks | `#tasks` | 3 task cards (cable routing, deformable, caregiving) |
-| Cross-Continent Testbeds | `#testbeds` | 4 site cards (Beijing, Hamburg, Munich, Pittsburgh) |
+| Cross-Continent Testbeds | `#testbeds` | 4 site cards (Hamburg, Munich, Pittsburgh, Shanghai) |
 | Call for Participation | `#call-for-participation` | Phase I / Phase II / Eligibility cards + key dates |
 | Sponsors | `#sponsors` | Same tier structure as Home |
 | Workshop callout | (banner) | "Looking for the Workshop?" → workshop.html |
@@ -171,7 +171,7 @@ Push to `main` of `IROS-EBiM/iros-ebim.github.io`; GitHub Pages auto-deploys at 
 ## Competition platform
 
 **Mobile FR3 Duo by Franka Robotics** — deployed at all four testbed sites:
-Beijing · Hamburg · Munich · Pittsburgh
+Hamburg · Munich · Pittsburgh · Shanghai
 
 ---
 
