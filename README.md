@@ -127,6 +127,7 @@ Push to `main` of `IROS-EBiM/iros-ebim.github.io`; GitHub Pages auto-deploys at 
 | Benchmark Tasks | `#tasks` | 3 task cards (cable routing, deformable, caregiving) |
 | Cross-Continent Testbeds | `#testbeds` | 4 site cards (Hamburg, Munich, Pittsburgh, Shanghai) |
 | Call for Participation | `#call-for-participation` | Phase I / Phase II / Eligibility cards + key dates |
+| Awards & Prizes | `#awards` | 3-card podium (1st/2nd/3rd) + total prize-pool callout (~$30K USD equivalent) |
 | Sponsors | `#sponsors` | Same tier structure as Home, plus a Community Resources callout (Franka Community) |
 | Workshop callout | (banner) | "Looking for the Workshop?" → workshop.html |
 
@@ -218,7 +219,7 @@ for which, pat in [('NAVBAR', r'<!-- SHARED NAVBAR.*?</nav>'),
 
 - **EBiM·IROS26** brand → `index.html`
 - **Home** dropdown → 4 sub-items linking to home sections
-- **Competition** dropdown → 7 sub-items linking to competition sections
+- **Competition** dropdown → 8 sub-items linking to competition sections
 - **Workshop** dropdown → 7 sub-items linking to workshop sections
 - **Organizers** → `index.html#organizers`
 - **Sponsors** → `index.html#sponsors`
@@ -351,6 +352,7 @@ Every `<img>` has `alt`, `width`, `height` (CLS prevention), `loading="lazy"`, a
 - [x] Franka Community placements: sub-link under Franka Robotics card (both pages) + Community Resources callout (competition.html)
 - [x] 4-testbed coverage: Hamburg, Munich, Pittsburgh, Shanghai (Asia testbed moved from Beijing to Shanghai)
 - [x] Competition timeline finalized: Jun 16 (start), Jul 31 (sim end), Aug 15 – Aug 31 (real-robot), Sep 27 – Oct 1 (workshop)
+- [x] Competition awards announced: ~$30K total prize pool (1st ~$3K, 2nd ~$2K, 3rd ~$1K) — gold subhero badge, dedicated `#awards` section on competition.html, prize ribbon on home Competition card, navbar entry, SEO meta description
 - [x] Branding unified under IROS-EBiM
 - [x] OG cover image at 1200×630 spec
 - [x] Stefan Schaal (Intrinsic) and Shaowei Cui confirmed as panelists
